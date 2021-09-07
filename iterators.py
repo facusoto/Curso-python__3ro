@@ -6,7 +6,7 @@ class FiboIter():
     def __init__(self, max_number=int):
         self.max_number = max_number
 
-    # No hace falta __init__ por no necesitar argumentos
+    # No hace falta __init__ por no necesitar argumentos. __iter__ es el generador de iteradores
     def __iter__(self):
         # Primer numerador === 0
         self.n1 = 0
@@ -16,6 +16,7 @@ class FiboIter():
         self.counter = 0
         return self
 
+    # __next__ es el que itera entre elementos
     def __next__(self):
         # Si contador es 0 lo aumenta y devuelve n1
         if self.counter == 0:
