@@ -1,5 +1,7 @@
 import time
 
+lst = []
+
 def fibo_gen(max):
     n1 = 0
     n2 = 1
@@ -25,4 +27,6 @@ if __name__ == '__main__':
     fibonacci = fibo_gen(999)
     for element in fibonacci:
         print(element)
+        lst.append(element)
         time.sleep(.05)
+    print(lst)
