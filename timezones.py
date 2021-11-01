@@ -1,6 +1,7 @@
 from datetime import datetime
 import pytz
 
+
 montevideo_timezone = pytz.timezone("America/Montevideo")
 montevideo_date = datetime.now(montevideo_timezone)
 print("Montevideo:\t" + montevideo_date.strftime('%d/%m/%Y - %H:%M:%S'))
